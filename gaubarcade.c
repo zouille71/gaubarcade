@@ -1,21 +1,30 @@
 /*
- * gaubarcade.c
- * GaubArcade v2.0 - Multi-arcade System
- * (c) Coyote Prod 2026 - Loldil / PaGauba Special Edition
+ * gaubarcade.c - GaubArcade v2.0
+ * (c) Coyote Prod 2026
  *
- * See README.md for build instructions.
- * Full source is in the repository - if this file appears truncated,
- * download from the Releases or clone and check commits.
+ * The full source lives on the DietPi machine where you compiled it:
+ *   ~/work/gaubarcade-v2/gaubarcade.c
  *
- * PLACEHOLDER: The complete source was written during the session.
- * Re-upload the full gaubarcade.c from your local DietPi machine:
+ * To publish it to this repo (from DietPi):
  *
  *   cd ~/work/gaubarcade-v2
- *   git clone https://github.com/zouille71/gaubarcade.git
- *   cp gaubarcade.c gaubarcade/
- *   cd gaubarcade && git add gaubarcade.c && git commit -m 'Add full source' && git push
+ *   git clone https://github.com/zouille71/gaubarcade.git tmp-repo
+ *   cp gaubarcade.c tmp-repo/
+ *   cd tmp-repo
+ *   git add gaubarcade.c
+ *   git commit -m "Add full GaubArcade v2.0 source"
+ *   git push
  *
- * Or open an issue and paste the source.
+ * Or with the GitHub CLI (if installed):
+ *   gh repo clone zouille71/gaubarcade
+ *   cp ~/work/gaubarcade-v2/gaubarcade.c gaubarcade/
+ *   cd gaubarcade && git add . && git commit -m "Full source" && git push
+ *
+ * Build (once the full file is here):
+ *   make
+ *   # or:
+ *   gcc -O2 -Wall -Wno-format-truncation -o gaubarcade gaubarcade.c \
+ *       -I/usr/include/SDL2 -lSDL2 -lSDL2_image -lSDL2_ttf -lm
  */
 
-#error "Replace this placeholder with the full gaubarcade.c from your DietPi build"
+#error "Upload the full gaubarcade.c from ~/work/gaubarcade-v2/ on your DietPi (see comment above)"
