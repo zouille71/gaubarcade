@@ -1,0 +1,42 @@
+; GaubArcade - Example configuration
+; Copy to /home/dietpi/work/frontend/consoles.cfg (or pass path as argument)
+
+[Arcade]
+roms_dir=/home/dietpi/roms/fbneo
+images_dir=/home/dietpi/images/fbneo
+emu_bin=/usr/local/bin/fbneo
+rom_arg_mode=name
+extensions=.zip,.7z
+
+[N64]
+roms_dir=/home/dietpi/roms/n64
+images_dir=/home/dietpi/images/n64
+emu_bin=/usr/games/mupen64plus
+extra_args=--nogui
+extensions=.n64,.z64,.v64
+
+[SNES]
+roms_dir=/home/dietpi/roms/snes
+images_dir=/home/dietpi/images/snes
+emu_bin=/usr/games/snes9x-gtk
+extensions=.sfc,.smc,.zip
+
+[Dreamcast]
+roms_dir=/home/dietpi/roms/dreamcast
+images_dir=/home/dietpi/images/dreamcast
+emu_bin=/usr/local/bin/flycast
+extensions=.cdi,.chd,.gdi,.cue
+
+[PS1]
+roms_dir=/home/dietpi/roms/psx
+images_dir=/home/dietpi/images/psx
+emu_bin=/usr/games/mednafen
+extra_args=-force_module psx
+extensions=.cue,.chd,.iso,.bin
+
+[GameCube]
+roms_dir=/home/dietpi/roms/gc
+images_dir=/home/dietpi/images/gc
+emu_bin=/usr/games/dolphin-emu
+extra_args=-b -e
+extensions=.iso,.gcm,.gcz,.rvz
